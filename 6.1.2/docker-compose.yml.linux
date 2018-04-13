@@ -63,6 +63,6 @@ kibana:
     io.rancher.scheduler.affinity:host_label: stack=elk
     io.rancher.sidekicks: elkconfiguredata
   ports:
-    - "5601:5601"
+    - "15601:15601"
   volumes_from:
     - elkconfiguredata
