@@ -24,8 +24,8 @@ elasticsearch:
     io.rancher.scheduler.affinity:host_label: stack=elk
     io.rancher.sidekicks: elkconfiguredata
   ports:
-    - "9200:9200"
-    - "9300:9300"
+    - "19200:19200"
+    - "19300:19300"
   volumes_from:
     - elkconfiguredata
   volumes:
@@ -45,7 +45,7 @@ logstash:
     io.rancher.scheduler.affinity:host_label: stack=elk
     io.rancher.sidekicks: elkconfiguredata
   ports:
-    - "5044:5044"
+    - "15044:15044"
   volumes_from:
     - elkconfiguredata
   volumes:
